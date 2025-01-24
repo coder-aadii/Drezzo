@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Product detail page for your selected item, showcasing detailed images, product information, reviews, and related suggestions.">
+    <meta name="author" content="Drezzo">
+    <meta name="robots" content="index, follow">
+
+    <title>Product Detail - Drezzo</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome (for icons like the shopping cart, share buttons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Lightbox for image gallery -->
+    <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.10.0/dist/index.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/Drezzo-logo.png" alt="Drezzo Logo" style="max-height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDresses" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Dresses
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownDresses">
+                            <a class="dropdown-item" href="#">Casual</a>
+                            <a class="dropdown-item" href="#">Party</a>
+                            <a class="dropdown-item" href="#">Evening</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAccessories"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Accessories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownAccessories">
+                            <a class="dropdown-item" href="#">Bags</a>
+                            <a class="dropdown-item" href="#">Jewelry</a>
+                            <a class="dropdown-item" href="#">Shoes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2 ml-5" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section id="product-detail" class="py-5 mt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Image Gallery -->
+                <div class="col-md-6">
+                    <div class="product-images">
+                        <div id="image-gallery" class="mb-3">
+                            <!-- Images will be populated dynamically here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="col-md-6">
+                    <h1 id="product-name" class="product-name">Product Name</h1>
+                    <p id="product-price" class="product-price">₹2999</p>
+
+                    <!-- Product Description -->
+                    <p id="product-description" class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <!-- Size and Color Options -->
+                    <div class="product-options">
+                        <div class="size-options">
+                            <label for="size">Size:</label>
+                            <select id="size" class="form-control">
+                                <option value="s">Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                                <option value="xl">Extra Large</option>
+                            </select>
+                        </div>
+                        <div class="color-options mt-3">
+                            <label for="color">Color:</label>
+                            <select id="color" class="form-control">
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <p id="product-availability" class="product-availability mt-3">
+                        <strong>Availability:</strong> In Stock
+                    </p>
+
+                    <!-- Delivery Details -->
+                    <p id="product-delivery" class="product-delivery mt-2">
+                        <strong>Delivery:</strong> Free delivery on orders over ₹1500.
+                    </p>
+
+                    <!-- Add to Cart Button -->
+                    <div class="add-to-cart mt-4">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" value="1" class="form-control w-25 mb-2">
+                        <button class="btn btn-primary btn-lg">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript to load data dynamically -->
+    <script>
+        // Function to fetch product details from the product.json file
+        function loadProductData() {
+            fetch('/product.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Update product details
+                    document.getElementById('name').textContent = data.name;
+                    document.getElementById('price').textContent = `₹${data.price}`;
+                    document.getElementById('description').textContent = data.description;
+                    document.getElementById('availability').textContent = `Availability: ${data.availability}`;
+                    document.getElementById('delivery').textContent = `Delivery: ${data.delivery}`;
+
+                    // Dynamically update the image gallery
+                    const imageGallery = document.getElementById('image');
+                    data.images.forEach(image => {
+                        const imageElement = document.createElement('a');
+                        imageElement.href = image.large;
+                        imageElement.setAttribute('data-bs-toggle', 'lightbox');
+                        imageElement.setAttribute('data-bs-target', '#image-gallery');
+                        const img = document.createElement('img');
+                        img.src = image.thumb;
+                        img.classList.add('img-fluid');
+                        img.alt = 'Product Image';
+                        imageElement.appendChild(img);
+                        imageGallery.appendChild(imageElement);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching product data:', error);
+                });
+        }
+
+        // Load product data when the page loads
+        window.onload = loadProductData;
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.10.0/dist/index.min.js"></script>
+</body>
+
+</html>

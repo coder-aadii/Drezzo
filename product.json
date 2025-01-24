@@ -1,0 +1,393 @@
+[
+    {
+        "id": 1,
+        "name": "Elegant Red Dress",
+        "category": "Casual Wear",
+        "price": 2999,
+        "description": "A stylish and comfortable red dress for casual outings.",
+        "image_url": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "images": [
+            {
+                "thumb": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=100&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D",
+                "large": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D"
+            }
+        ],
+        "size_options": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "color_options": [
+            "Red",
+            "Blue",
+            "Black"
+        ],
+        "availability": "In Stock",
+        "delivery_info": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 2,
+        "name": "Blue Evening Gown",
+        "category": "Evening Wear",
+        "price": 4500,
+        "description": "An elegant blue evening gown perfect for formal events.",
+        "image_url": "https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "images": [
+            {
+                "thumb": "https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?q=80&w=100&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "large": "https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
+        ],
+        "size_options": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "color_options": [
+            "Blue",
+            "Black",
+            "White"
+        ],
+        "availability": "In Stock",
+        "delivery_info": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 3,
+        "name": "Casual Beige Shirt",
+        "category": "Casual Wear",
+        "price": 1200,
+        "description": "A comfortable beige shirt perfect for everyday wear.",
+        "image_url": "https://images.unsplash.com/photo-1495385794356-15371f348c31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZhc2hpb258ZW58MHx8MHx8fDA%3D",
+        "images": [
+            {
+                "thumb": "https://images.unsplash.com/photo-1495385794356-15371f348c31?w=100&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZhc2hpb258ZW58MHx8MHx8fDA%3D",
+                "large": "https://images.unsplash.com/photo-1495385794356-15371f348c31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZhc2hpb258ZW58MHx8MHx8fDA%3D"
+            }
+        ],
+        "size_options": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "color_options": [
+            "Beige",
+            "White",
+            "Black"
+        ],
+        "availability": "Out of Stock",
+        "delivery_info": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 4,
+        "name": "Trendy Black Backpack",
+        "category": "Accessories",
+        "price": 2500,
+        "description": "A fashionable black backpack suitable for daily use.",
+        "image_url": "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGZhc2hpb258ZW58MHx8MHx8fDA%3D",
+        "images": [
+            {
+                "thumb": "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=100&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGZhc2hpb258ZW58MHx8MHx8fDA%3D",
+                "large": "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGZhc2hpb258ZW58MHx8MHx8fDA%3D"
+            }
+        ],
+        "size_options": [
+            "One Size"
+        ],
+        "color_options": [
+            "Black",
+            "Gray",
+            "Brown"
+        ],
+        "availability": "In Stock",
+        "delivery_info": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 5,
+        "name": "Luxury Brown Handbag",
+        "category": "Accessories",
+        "price": 5000,
+        "description": "A luxurious brown handbag, perfect for formal and casual occasions.",
+        "image_url": "https://images.unsplash.com/photo-1495121605193-b116b5b9c5fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGZhc2hpb258ZW58MHx8MHx8fDA%3D",
+        "size_options": [
+            "One Size"
+        ],
+        "color_options": [
+            "Brown",
+            "Beige",
+            "Black"
+        ],
+        "availability": "In Stock",
+        "delivery_info": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 6,
+        "name": "Chic White Summer Hat",
+        "category": "Accessories",
+        "price": 999,
+        "description": "A chic white summer hat perfect for sunny days.",
+        "image_url": "https://cdn.pixabay.com/photo/2017/12/06/20/23/accessory-3002608_1280.jpg",
+        "size_options": [
+            "One Size"
+        ],
+        "color_options": [
+            "White",
+            "Pink",
+            "Blue"
+        ],
+        "availability": "In Stock",
+        "delivery_info": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 7,
+        "name": "Stylish Gold Earrings",
+        "category": "Accessories",
+        "price": 1200,
+        "description": "Elegant gold earrings to add a touch of style to your outfit.",
+        "image_url": "https://thumbs.dreamstime.com/b/summer-fashion-accessories-women-50537407.jpg",
+        "size_options": [
+            "One Size"
+        ],
+        "color_options": [
+            "Gold",
+            "Silver"
+        ],
+        "availability": "In Stock",
+        "delivery_info": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 8,
+        "name": "Men's Stylish Shirt",
+        "category": "Casual Wear",
+        "price": 1500,
+        "description": "A stylish shirt for men, perfect for casual and semi-formal wear.",
+        "image_url": "https://static.vecteezy.com/system/resources/thumbnails/037/954/388/small_2x/clothing-for-men-on-the-wooden-floor-photo.jpg",
+        "size_options": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "color_options": [
+            "White",
+            "Black",
+            "Blue"
+        ],
+        "availability": "In Stock",
+        "delivery_info": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 9,
+        "name": "Orange Handbag",
+        "category": "Accessories",
+        "price": 2800,
+        "description": "A vibrant orange handbag, perfect for a stylish look.",
+        "image_url": "https://media.istockphoto.com/id/618731934/photo/orange-handbag.jpg?s=612x612&w=0&k=20&c=Ot3RRnqbrWe4rqD3BelTS-LI6GdMKxE39gLbopEem9E=",
+        "size_options": [
+            "One Size"
+        ],
+        "color_options": [
+            "Orange",
+            "Red",
+            "Yellow"
+        ],
+        "availability": "In Stock",
+        "delivery_info": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 10,
+        "name": "Vintage Floral Dress",
+        "category": "Dresses",
+        "price": 3499,
+        "description": "A beautiful vintage floral dress for all occasions.",
+        "image": "https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "color": [
+            "Red",
+            "Blue",
+            "White"
+        ],
+        "availability": "In Stock",
+        "delivery": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 11,
+        "name": "Classic Black Wallet",
+        "category": "Accessories",
+        "price": 1299,
+        "description": "A sleek and timeless black wallet for everyday use.",
+        "image": "https://images.unsplash.com/photo-1495385794356-15371f348c31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZhc2hpb258ZW58MHx8MHx8fDA%3D",
+        "size": [
+            "One Size"
+        ],
+        "color": [
+            "Black",
+            "Grey"
+        ],
+        "availability": "In Stock",
+        "delivery": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 12,
+        "name": "Summer Floral Dress",
+        "category": "Dresses",
+        "price": 2899,
+        "description": "A vibrant and airy floral dress perfect for summer outings.",
+        "image": "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGZhc2hpb258ZW58MHx8MHx8fDA%3D",
+        "size": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "color": [
+            "Pink",
+            "Green",
+            "White"
+        ],
+        "availability": "In Stock",
+        "delivery": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 13,
+        "name": "Elegant Red Handbag",
+        "category": "Accessories",
+        "price": 1799,
+        "description": "A chic red handbag to add elegance to any outfit.",
+        "image": "https://images.unsplash.com/photo-1495121605193-b116b5b9c5fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGZhc2hpb258ZW58MHx8MHx8fDA%3D",
+        "size": [
+            "One Size"
+        ],
+        "color": [
+            "Red",
+            "Maroon"
+        ],
+        "availability": "In Stock",
+        "delivery": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 14,
+        "name": "Leather Handbag",
+        "category": "Accessories",
+        "price": 4599,
+        "description": "A luxurious leather handbag designed for fashion-forward individuals.",
+        "image": "https://cdn.pixabay.com/photo/2017/12/06/20/23/accessory-3002608_1280.jpg",
+        "size": [
+            "One Size"
+        ],
+        "color": [
+            "Brown",
+            "Black"
+        ],
+        "availability": "In Stock",
+        "delivery": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 15,
+        "name": "Strappy Sandals",
+        "category": "Accessories",
+        "price": 1799,
+        "description": "Trendy strappy sandals for a comfortable yet stylish look.",
+        "image": "https://thumbs.dreamstime.com/b/summer-fashion-accessories-women-50537407.jpg",
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "color": [
+            "Black",
+            "Beige"
+        ],
+        "availability": "In Stock",
+        "delivery": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 16,
+        "name": "Denim Jacket",
+        "category": "Dresses",
+        "price": 1999,
+        "description": "A classic denim jacket, perfect for layering over any outfit.",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/037/954/388/small_2x/clothing-for-men-on-the-wooden-floor-photo.jpg",
+        "size": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "color": [
+            "Blue",
+            "Black"
+        ],
+        "availability": "In Stock",
+        "delivery": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 17,
+        "name": "Orange Tote Bag",
+        "category": "Accessories",
+        "price": 1999,
+        "description": "A spacious orange tote bag perfect for work or travel.",
+        "image": "https://media.istockphoto.com/id/618731934/photo/orange-handbag.jpg?s=612x612&w=0&k=20&c=Ot3RRnqbrWe4rqD3BelTS-LI6GdMKxE39gLbopEem9E=",
+        "size": [
+            "One Size"
+        ],
+        "color": [
+            "Orange",
+            "Red"
+        ],
+        "availability": "In Stock",
+        "delivery": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 18,
+        "name": "Sleek Black Watch",
+        "category": "Accessories",
+        "price": 2999,
+        "description": "A stylish and sophisticated black watch for everyday use.",
+        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "size": [
+            "One Size"
+        ],
+        "color": [
+            "Black",
+            "Silver"
+        ],
+        "availability": "In Stock",
+        "delivery": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 19,
+        "name": "Golden Earrings",
+        "category": "Accessories",
+        "price": 1499,
+        "description": "Elegant golden earrings that add a touch of luxury.",
+        "image": "https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "size": [
+            "One Size"
+        ],
+        "color": [
+            "Gold"
+        ],
+        "availability": "In Stock",
+        "delivery": "Free delivery on orders over ₹1500."
+    },
+    {
+        "id": 20,
+        "name": "Casual Backpack",
+        "category": "Accessories",
+        "price": 1799,
+        "description": "A casual backpack perfect for carrying daily essentials.",
+        "image": "https://images.unsplash.com/photo-1495385794356-15371f348c31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZhc2hpb258ZW58MHx8MHx8fDA%3D",
+        "size": [
+            "One Size"
+        ],
+        "color": [
+            "Black",
+            "Grey"
+        ],
+        "availability": "In Stock",
+        "delivery": "Free delivery on orders over ₹1500."
+    }
+]

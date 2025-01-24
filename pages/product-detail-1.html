@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Product detail page for your selected item, showcasing detailed images, product information, reviews, and related suggestions.">
+    <meta name="author" content="Drezzo">
+    <meta name="robots" content="index, follow">
+
+    <title>Product Detail - Drezzo</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome (for icons like the shopping cart, share buttons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Lightbox for image gallery -->
+    <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.10.0/dist/index.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/Drezzo-logo.png" alt="Drezzo Logo" style="max-height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDresses" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Dresses
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownDresses">
+                            <a class="dropdown-item" href="#">Casual</a>
+                            <a class="dropdown-item" href="#">Party</a>
+                            <a class="dropdown-item" href="#">Evening</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAccessories"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Accessories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownAccessories">
+                            <a class="dropdown-item" href="#">Bags</a>
+                            <a class="dropdown-item" href="#">Jewelry</a>
+                            <a class="dropdown-item" href="#">Shoes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2 ml-5" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section id="product-detail" class="py-5 mt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Image Gallery -->
+                <div class="col-md-6">
+                    <div class="product-images">
+                        <div id="image-gallery" class="mb-3">
+                            <!-- Main Image -->
+                            <a href="image1_large.jpg" data-bs-toggle="lightbox" data-bs-target="#image-gallery">
+                                <img src="image1_thumb.jpg" class="img-fluid" alt="Product Image 1">
+                            </a>
+                            <!-- Additional Images -->
+                            <div class="row mt-2">
+                                <div class="col-4">
+                                    <a href="image2_large.jpg" data-bs-toggle="lightbox"
+                                        data-bs-target="#image-gallery">
+                                        <img src="image2_thumb.jpg" class="img-fluid" alt="Product Image 2">
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="image3_large.jpg" data-bs-toggle="lightbox"
+                                        data-bs-target="#image-gallery">
+                                        <img src="image3_thumb.jpg" class="img-fluid" alt="Product Image 3">
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="image4_large.jpg" data-bs-toggle="lightbox"
+                                        data-bs-target="#image-gallery">
+                                        <img src="image4_thumb.jpg" class="img-fluid" alt="Product Image 4">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="col-md-6">
+                    <h1 class="product-name">Product Name</h1>
+                    <p class="product-price">₹2999</p>
+
+                    <!-- Product Description -->
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+                        perspiciatis
+                        unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+
+                    <!-- Size and Color Options -->
+                    <div class="product-options">
+                        <div class="size-options">
+                            <label for="size">Size:</label>
+                            <select id="size" class="form-control">
+                                <option value="s">Small</option>
+                                <option value="m">Medium</option>
+                                <option value="l">Large</option>
+                                <option value="xl">Extra Large</option>
+                            </select>
+                        </div>
+                        <div class="color-options mt-3">
+                            <label for="color">Color:</label>
+                            <select id="color" class="form-control">
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <p class="product-availability mt-3">
+                        <strong>Availability:</strong> In Stock
+                    </p>
+
+                    <!-- Delivery Details -->
+                    <p class="product-delivery mt-2">
+                        <strong>Delivery:</strong> Free delivery on orders over ₹1500.
+                    </p>
+
+                    <!-- Add to Cart Button -->
+                    <div class="add-to-cart mt-4">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" value="1" class="form-control w-25 mb-2">
+                        <button class="btn btn-primary btn-lg">Add to Cart</button>
+                    </div>
+
+                    <!-- Social Media Share Buttons -->
+                    <div class="social-share mt-4">
+                        <p>Share this product:</p>
+                        <a href="#" class="btn btn-outline-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-danger"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-dark"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Size Guide Modal -->
+            <div class="modal fade" id="size-guide-modal" tabindex="-1" role="dialog"
+                aria-labelledby="size-guide-modal-label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="size-guide-modal-label">Size Guide</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Size</th>
+                                        <th>Chest (inches)</th>
+                                        <th>Waist (inches)</th>
+                                        <th>Hip (inches)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Small</td>
+                                        <td>32-34</td>
+                                        <td>24-26</td>
+                                        <td>34-36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Medium</td>
+                                        <td>36-38</td>
+                                        <td>28-30</td>
+                                        <td>38-40</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Large</td>
+                                        <td>40-42</td>
+                                        <td>32-34</td>
+                                        <td>42-44</td>
+                                    </tr>
+                                    <tr>
+                                        <td>XL</td>
+                                        <td>44-46</td>
+                                        <td>36-38</td>
+                                        <td>46-48</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews and Ratings -->
+            <section id="reviews" class="mt-5">
+                <h3>Customer Reviews</h3>
+                <div class="review">
+                    <div class="review-header">
+                        <span class="review-author">John Doe</span>
+                        <span class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                    </div>
+                    <p class="review-text">Amazing quality! The color is exactly as shown in the pictures. Fits
+                        perfectly!</p>
+                </div>
+                <div class="review">
+                    <div class="review-header">
+                        <span class="review-author">Jane Smith</span>
+                        <span class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p class="review-text">Loved it! Fast delivery and great fit. Highly recommend!</p>
+                </div>
+            </section>
+
+            <!-- Related Products -->
+            <section id="related-products" class="mt-5">
+                <h3>Related Products</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="related-product1.jpg" class="img-fluid" alt="Related Product 1">
+                            <h5 class="product-name">Casual Dress</h5>
+                            <p class="product-price">₹1999</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="related-product2.jpg" class="img-fluid" alt="Related Product 2">
+                            <h5 class="product-name">Evening Gown</h5>
+                            <p class="product-price">₹3999</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <img src="related-product3.jpg" class="img-fluid" alt="Related Product 3">
+                            <h5 class="product-name">Luxury Handbag</h5>
+                            <p class="product-price">₹2499</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.10.0/dist/index.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
